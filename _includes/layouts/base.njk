@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#121212">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.setAttribute("data-theme","light");var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute("content","#faf9f6");}}catch(e){}</script>
+<title>{% if title and title != site.title %}{{ title }} — {% endif %}{{ site.title }}</title>
+{% set pageDescription = site.description %}
+{% if page.url != "/" %}{% set pageDescription = content | excerpt %}{% endif %}
+<meta name="description" content="{{ pageDescription }}">
+<meta name="author" content="{{ site.author }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<link rel="alternate" hreflang="en" href="https://jonathanmccallum.com{{ page.url }}">
+<link rel="alternate" hreflang="ja" href="https://jonathanmccallum-ja.pages.dev{{ page.url }}">
+<link rel="alternate" hreflang="hi" href="https://jonathanmccallum-hi.pages.dev{{ page.url }}">
+<link rel="alternate" hreflang="ru" href="https://jonathanmccallum-ru.pages.dev{{ page.url }}">
+<link rel="alternate" hreflang="zh" href="https://jonathanmccallum-zh.pages.dev{{ page.url }}">
+<link rel="alternate" hreflang="es" href="https://jonathanmccallum-es.pages.dev{{ page.url }}">
+<link rel="alternate" hreflang="ar" href="https://jonathanmccallum-ar.pages.dev{{ page.url }}">
+<link rel="alternate" hreflang="fr" href="https://jonathanmccallum-fr.pages.dev{{ page.url }}">
+<link rel="alternate" hreflang="bn" href="https://jonathanmccallum-bn.pages.dev{{ page.url }}">
+<link rel="alternate" hreflang="x-default" href="https://jonathanmccallum.com{{ page.url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{% if title and title != site.title %}{{ title }} — {% endif %}{{ site.title }}">
+<meta property="og:description" content="{{ pageDescription }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:type" content="{% if tags and 'posts' in tags %}article{% else %}website{% endif %}">
+{% if tags and 'posts' in tags and page.date %}<meta property="article:published_time" content="{{ page.date.toISOString() }}">{% endif %}
+{# A post can set shareImage in front matter to use its own photo; otherwise the wave photo. #}
+{% set pageShareImage = shareImage or "/images/share.jpg" %}
+<meta property="og:image" content="{{ site.url }}{{ pageShareImage }}">
+{% if not shareImage %}<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">{% endif %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if title and title != site.title %}{{ title }} — {% endif %}{{ site.title }}">
+<meta name="twitter:description" content="{{ pageDescription }}">
+<meta name="twitter:image" content="{{ site.url }}{{ pageShareImage }}">
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": {{ site.title | dump | safe }},
+      "url": {{ site.url | dump | safe }},
+      "description": {{ site.description | dump | safe }},
+      "inLanguage": "zh"
+    },
+    {
+      "@type": "Person",
+      "name": {{ site.author | dump | safe }},
+      "url": {{ site.url | dump | safe }},
+      "sameAs": [
+        "https://www.instagram.com/jonamccallum",
+        "https://www.threads.com/@jonamccallum",
+        "https://www.youtube.com/@Jonathanmccallum1",
+        "https://jonamccallum.substack.com"
+      ]
+    }
+  ]
+}
+</script>
+{% elif tags and 'posts' in tags %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ title | dump | safe }},
+  "description": {{ pageDescription | dump | safe }},
+  "url": {{ (site.url + page.url) | dump | safe }},
+  "image": {{ (site.url + pageShareImage) | dump | safe }},
+{% if page.date %}  "datePublished": {{ page.date.toISOString().slice(0, 10) | dump | safe }},
+  "dateModified": {{ page.date.toISOString().slice(0, 10) | dump | safe }},
+{% endif %}  "author": { "@type": "Person", "name": {{ site.author | dump | safe }}, "url": {{ site.url | dump | safe }} },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": {{ (site.url + page.url) | dump | safe }} },
+  "inLanguage": "zh"
+}
+</script>
+{% else %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": {{ title | dump | safe }},
+  "url": {{ (site.url + page.url) | dump | safe }},
+  "description": {{ pageDescription | dump | safe }},
+  "inLanguage": "zh"
+}
+</script>
+{% endif %}
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed/">
+<link rel="preload" href="/css/style.css?v=10" as="style">
+<link rel="stylesheet" href="/css/style.css?v=10">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到内容</a>
+<header class="site-header">
+  <a class="site-header__title" href="/">Jonathan McCallum</a>
+  <button id="theme-toggle" type="button">深色</button>
+</header>
+<main id="main">
+{{ content | safe }}
+</main>
+<footer class="site-footer">
+    <p>{{ site.title }} — <a href="/feed/">RSS feed</a> · <a href="/search/">搜索</a> · <a href="/privacy/">隐私</a></p>
+  <p>Connect — <a href="https://www.instagram.com/jonamccallum">Instagram</a> · <a href="https://www.threads.com/@jonamccallum">Threads</a> · <a href="https://www.youtube.com/@Jonathanmccallum1">YouTube</a> · <a href="https://jonamccallum.substack.com">Substack</a> · <a href="/feed/">RSS</a></p>
+  <p>Built with Eleventy, hosted on Cloudflare Pages.</p>
+</footer>
+<script src="/js/main.js?v=8" defer></script>
+</body>
+</html>

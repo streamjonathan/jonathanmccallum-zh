@@ -1,0 +1,305 @@
+/* jonathanmccallum.com — one page, text first, no frameworks.
+   Two self-hosted variable fonts (Fraunces for display, Newsreader for
+   body), latin subsets only, font-display: swap, so the text never waits
+   on a font. Night is the start: dark by default, with a warm light day
+   option the reader can choose at the top. The chat box is the entrance —
+   the first thing to use, no clicking through to reach it.
+   Palettes are warm, never pure black or white. Gold is the one accent. */
+@font-face {
+  font-family: "Fraunces";
+  src: url("/css/fonts/fraunces-latin.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Newsreader";
+  src: url("/css/fonts/newsreader-latin.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  color-scheme: dark;
+  --bg: #121212;
+  --text: #faf9f6;
+  --muted: #a8a49c;
+  --line: #2e2e2e;
+  --link: #e8c87a;
+  --visited: #cbb27a;
+  --code-bg: #1f1f1f;
+  --quote: #d8d2c4;
+  --field-bg: #1f1f1f;
+  --chip-bg: rgba(255, 255, 255, 0.06);
+  --btn-bg: #faf9f6;
+  --btn-text: #121212;
+}
+/* Day: warm paper, never white. */
+html[data-theme="light"] {
+  color-scheme: light;
+  --bg: #faf9f6;
+  --text: #1a1815;
+  --muted: #6d6960;
+  --line: #cfccc3;
+  --link: #7a5a10;
+  --visited: #6b5a2e;
+  --code-bg: #e8e4da;
+  --quote: #55524a;
+  --field-bg: #f2efe8;
+  --chip-bg: rgba(0, 0, 0, 0.05);
+  --btn-bg: #1a1815;
+  --btn-text: #faf9f6;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 1rem 1.25rem 3rem;
+  font: 1.0625rem/1.65 "Newsreader", Georgia, "Iowan Old Style", "Times New Roman", serif;
+  color: var(--text);
+  background: var(--bg);
+}
+p { text-wrap: pretty; }
+h1, h2, h3 { line-height: 1.25; font-family: "Fraunces", Georgia, "Iowan Old Style", "Times New Roman", serif; font-weight: 600; letter-spacing: -0.01em; text-wrap: balance; }
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.25rem; margin-top: 2rem; }
+a { color: var(--link); }
+a:visited { color: var(--visited); }
+a:hover { color: var(--link); }
+::selection { background: var(--link); color: var(--bg); }
+:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+img, picture, video, iframe { max-width: 100%; height: auto; }
+img { display: block; }
+/* Slim header on every page: the site title links home, theme choice at right. */
+.site-header { display: flex; justify-content: space-between; align-items: baseline; }
+.site-header__title { color: var(--muted); font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; font-variant-numeric: tabular-nums; text-decoration: none; padding: 0.75rem 0.25rem; min-height: 2.75rem; display: inline-block; }
+.site-header__title:hover { color: var(--link); }
+.site-header button {
+  border: 0; background: none; padding: 0.75rem 0.25rem;
+  font: 0.95rem system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--muted); cursor: pointer; min-height: 2.75rem;
+}
+/* Skip link: invisible until tabbed to, then it appears at the top. */
+.skip-link { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.skip-link:focus { position: absolute; width: auto; height: auto; overflow: visible; clip: auto; white-space: normal; background: var(--bg); color: var(--link); padding: 0.75rem 1rem; z-index: 10; }
+.site-title { font-family: "Fraunces", Georgia, "Iowan Old Style", "Times New Roman", serif; font-weight: 600; font-size: 2rem; margin: 0.5rem 0 0; }
+.rule-gold { border: 0; border-top: 2px solid var(--link); width: 4rem; margin: 0.75rem 0 1rem; }
+.intro { font-family: "Fraunces", Georgia, "Iowan Old Style", "Times New Roman", serif; font-weight: 500; font-size: 1.6rem; line-height: 1.45; margin: 0.5rem 0 1rem; }
+/* Social links: one row, easy to reach, easy to tap. */
+.social { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; margin: 0 0 1.5rem; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 1rem; }
+.social a { padding: 0.6rem 0; }
+main ul { padding-left: 1.25rem; }
+main li { margin: 0.4rem 0; }
+main li a { padding: 0.15rem 0; }
+.site-footer { border-top: 1px solid var(--line); margin-top: 2.5rem; padding-top: 0.75rem; font-size: 0.9rem; color: var(--muted); }
+.meta { color: var(--muted); font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; font-variant-numeric: tabular-nums; }
+blockquote { border-left: 3px solid var(--link); margin-left: 0; padding-left: 1rem; color: var(--quote); }
+/* Drop cap on the first paragraph of each essay. */
+.post-body > p:first-of-type::first-letter {
+  font-size: 3.2em; float: left; line-height: 0.85;
+  padding-right: 0.12em; padding-top: 0.05em;
+  font-family: "Fraunces", Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-weight: 600;
+  color: var(--link);
+}
+code { font-size: 0.9em; }
+pre { overflow-x: auto; background: var(--code-bg); padding: 0.75rem; }
+/* The chat is the entrance: big box, one clear button, try-it chips. */
+.ask-hero { margin: clamp(2rem, 5vw, 3rem) 0; }
+.ask-hero h2 { margin-top: 0; }
+.ask-hero form { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.75rem 0; }
+.ask-hero label { width: 100%; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+.ask-hero input {
+  flex: 1 1 12rem; min-width: 0; padding: 0.75rem 1rem;
+  font: 1.1rem system-ui, -apple-system, "Segoe UI", sans-serif;
+  border: 1px solid var(--line); border-radius: 0.75rem;
+  color: var(--text); background: var(--field-bg); min-height: 3.25rem;
+}
+.ask-hero button[type="submit"] {
+  padding: 0.75rem 1.5rem; border: 0; border-radius: 0.75rem;
+  font: 1.05rem system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--btn-text); background: var(--btn-bg); cursor: pointer; min-height: 3.25rem;
+}
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.25rem 0 0.75rem; }
+.chips button {
+  border: 1px solid var(--line); border-radius: 999px; background: var(--chip-bg);
+  color: var(--text); padding: 0.5rem 0.95rem; min-height: 2.75rem;
+  font: 0.95rem system-ui, -apple-system, "Segoe UI", sans-serif; cursor: pointer;
+}
+#ask-answer { margin-top: 1rem; }
+#ask-answer ul { padding-left: 1.25rem; }
+.ask-fallback { color: var(--muted); font-size: 0.95rem; }
+.ai-note { color: var(--muted); font-size: 0.9rem; }
+/* Leave a note: one anonymous box, no name or email asked for. */
+.note-section { margin: clamp(2rem, 5vw, 3rem) 0; }
+.note-section form { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.75rem 0; }
+.note-section textarea {
+  flex: 1 1 100%; padding: 0.75rem 1rem; resize: vertical;
+  font: 1.05rem/1.5 "Newsreader", Georgia, "Times New Roman", serif;
+  border: 1px solid var(--line); border-radius: 0.75rem;
+  color: var(--text); background: var(--field-bg);
+}
+.note-section button[type="submit"] {
+  padding: 0.75rem 1.5rem; border: 0; border-radius: 0.75rem;
+  font: 1.05rem system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--btn-text); background: var(--btn-bg); cursor: pointer; min-height: 3.25rem;
+}
+#note-result { color: var(--muted); }
+/* Article list: title, date, one line of the writing itself. */
+.article-list { list-style: none; padding-left: 0; }
+.article-list li { border-top: 1px solid var(--line); padding: 0.9rem 0; margin: 0; }
+.article-list li a { font-size: 1.12rem; font-family: "Fraunces", Georgia, "Iowan Old Style", "Times New Roman", serif; font-weight: 600; color: var(--text); transition: color .2s ease; }
+.article-list li a:hover { color: var(--link); }
+.article-list .meta { margin-left: 0.5rem; }
+.article-list .excerpt { color: var(--muted); font-size: 0.95rem; margin: 0.35rem 0 0; }
+/* Forms elsewhere: roomy tap targets, full-width fields on phones. */
+form { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.75rem 0; }
+label { width: 100%; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+input, button { font: 1rem system-ui, -apple-system, "Segoe UI", sans-serif; min-height: 2.75rem; }
+input {
+  flex: 1 1 12rem; min-width: 0; padding: 0.5rem 0.75rem;
+  border: 1px solid var(--line); border-radius: 0.25rem;
+  color: var(--text); background: var(--field-bg);
+}
+button[type="submit"] {
+  padding: 0.5rem 1.25rem; border: 1px solid var(--line); border-radius: 0.25rem;
+  color: var(--text); background: var(--code-bg); cursor: pointer;
+}
+/* Previous / next post. Swipe left / right on a post does the same. */
+.post-nav {
+  display: flex; justify-content: space-between; gap: 1rem;
+  border-top: 1px solid var(--line); margin-top: 2.5rem; padding-top: 1rem;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 0.95rem;
+}
+.post-nav a { padding: 0.5rem 0; }
+.post-nav__next { margin-left: auto; text-align: right; }
+/* Floating Ask button + pop-up chat panel: one tap from any page.
+   Full-screen bottom sheet on phones, centred panel on larger screens.
+   Inputs stay at 16px or above so iOS never zooms the page on focus. */
+#ask-fab {
+  position: fixed;
+  right: 1rem;
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  z-index: 50;
+  width: 3.5rem; height: 3.5rem; min-height: 3.5rem;
+  border: 0; border-radius: 999px;
+  background: var(--btn-bg); color: var(--btn-text);
+  font: 600 1.05rem system-ui, -apple-system, "Segoe UI", sans-serif;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+#ask-overlay {
+  position: fixed; inset: 0; z-index: 60;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex; align-items: flex-end; justify-content: center;
+}
+#ask-overlay[hidden] { display: none; }
+.ask-panel {
+  width: 100%; max-height: 92dvh; overflow-y: auto;
+  background: var(--bg); color: var(--text);
+  border: 1px solid var(--line); border-bottom: 0;
+  border-radius: 1rem 1rem 0 0;
+  padding: 1rem 1.25rem calc(1.25rem + env(safe-area-inset-bottom, 0px));
+}
+.ask-panel__head {
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+}
+.ask-panel__head h2 { margin: 0; }
+#ask-close {
+  border: 0; background: none; color: var(--muted);
+  font: 1.5rem/1 system-ui, -apple-system, "Segoe UI", sans-serif;
+  min-width: 2.75rem; min-height: 2.75rem; cursor: pointer;
+}
+.ask-panel__note { color: var(--muted); font-size: 0.9rem; margin: 0.5rem 0 0; }
+.ask-panel form { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.75rem 0; }
+.ask-panel label { width: 100%; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+.ask-panel input {
+  flex: 1 1 12rem; min-width: 0; padding: 0.75rem 1rem;
+  font: 1.05rem system-ui, -apple-system, "Segoe UI", sans-serif;
+  border: 1px solid var(--line); border-radius: 0.75rem;
+  color: var(--text); background: var(--field-bg); min-height: 3.25rem;
+}
+.ask-panel button[type="button"] {
+  padding: 0.75rem 1.5rem; border: 0; border-radius: 0.75rem;
+  font: 1.05rem system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--btn-text); background: var(--btn-bg); cursor: pointer; min-height: 3.25rem;
+}
+#ask-answer-overlay { margin-top: 1rem; }
+#ask-answer-overlay ul { padding-left: 1.25rem; }
+@media (min-width: 40rem) {
+  #ask-overlay { align-items: center; padding: 1rem; }
+  .ask-panel {
+    max-width: 36rem; border-bottom: 1px solid var(--line);
+    border-radius: 1rem;
+  }
+}
+/* Tap-to-load video facade: 16:9 box, thumbnail + play button, no iframe
+   or third-party script until the reader taps. */
+.video-facade { position: relative; aspect-ratio: 16 / 9; background: #111; margin: 1rem 0; }
+.video-facade__button { display: block; width: 100%; height: 100%; padding: 0; border: 0; background: none; cursor: pointer; }
+.video-facade__thumb { width: 100%; height: 100%; object-fit: cover; }
+.video-facade__play {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  width: 4rem; height: 2.75rem; line-height: 2.75rem; text-align: center;
+  background: rgba(0, 0, 0, 0.75); color: #fff; border-radius: 0.5rem; font-size: 1.25rem;
+}
+.video-facade iframe, .video-facade + iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; }
+/* Watch row: a horizontal scroll-snap row of tap-to-load video cards.
+   The YouTube links in index.njk are turned into facades by the
+   videoFacade transform, so no iframe or third-party script loads
+   until the reader taps a card. */
+.watch-section { margin-top: 2.5rem; }
+.watch-row { display: flex; gap: 1rem; overflow-x: auto; scroll-snap-type: x mandatory; list-style: none; padding: 0 0 0.5rem; margin: 1rem 0; }
+.watch-card { flex: 0 0 20rem; scroll-snap-align: start; }
+.watch-card .video-facade { margin: 0; }
+.watch-title { font-size: 0.95rem; margin: 0.5rem 0 0; font-family: "Fraunces", Georgia, "Iowan Old Style", "Times New Roman", serif; font-weight: 600; }
+/* Featured carousel: the newest articles in a slow-moving row, same
+   scroll-snap pattern as the Watch row. The reader can swipe or scroll
+   it by hand; the script below moves it along gently when left alone. */
+.featured { margin-top: 1.5rem; }
+.featured-row { display: flex; gap: 1rem; overflow-x: auto; scroll-snap-type: x mandatory; list-style: none; padding: 0 0 0.5rem; margin: 1rem 0; }
+/* The arrows and dots are the navigation now, so the row's own
+   scrollbar is hidden. The Watch row keeps its scrollbar — it has
+   no arrows, so the scrollbar is its only hint that it scrolls. */
+.featured-row { scrollbar-width: none; }
+.featured-row::-webkit-scrollbar { display: none; }
+.featured-card { flex: 0 0 20rem; scroll-snap-align: start; border-top: 1px solid var(--line); padding-top: 0.9rem; }
+.featured-card a { font-size: 1.12rem; font-family: "Fraunces", Georgia, "Iowan Old Style", "Times New Roman", serif; font-weight: 600; color: var(--text); transition: color .2s ease; }
+.featured-card a:hover { color: var(--link); }
+.featured-card .meta { margin-left: 0.5rem; }
+.featured-card .excerpt { color: var(--muted); font-size: 0.95rem; margin: 0.35rem 0 0; }
+.featured-image { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; margin-bottom: 0.5rem; }
+/* Featured carousel controls: arrows and dots, only shown once the
+   carousel script has set the section ready. Cards without a photo get
+   a quiet 16:9 block, so every card is the same height and the row
+   never jumps as it moves. */
+.featured-image--empty { background: var(--chip-bg); border: 1px solid var(--line); }
+.featured-controls { display: none; align-items: center; gap: 0.75rem; margin: 0.75rem 0 0; }
+.featured.is-ready .featured-controls { display: flex; }
+.featured-arrow {
+  width: 2.75rem; height: 2.75rem; min-height: 2.75rem; padding: 0;
+  border: 1px solid var(--line); border-radius: 999px;
+  background: var(--chip-bg); color: var(--text);
+  font: 1.5rem/1 system-ui, -apple-system, "Segoe UI", sans-serif;
+  cursor: pointer;
+}
+.featured-arrow:hover { color: var(--link); border-color: var(--link); }
+.featured-dots { display: flex; gap: 0.25rem; flex: 1; justify-content: center; }
+.featured-dot {
+  width: 1.5rem; height: 1.5rem; min-height: 1.5rem; padding: 0;
+  border: 0; background: none; cursor: pointer;
+}
+.featured-dot::before {
+  content: ""; display: block; width: 0.55rem; height: 0.55rem;
+  margin: 0 auto; border-radius: 999px; background: var(--muted);
+  transition: background .2s ease;
+}
+.featured-dot[aria-current="true"]::before { background: var(--link); }
+/* Gentle fade-in as sections enter view. Only when JavaScript adds
+   .js-fade to <html>, so without JS everything is simply visible.
+   Off entirely when the reader prefers reduced motion. */
+.js-fade [data-fade] { opacity: 0; transform: translateY(8px); transition: opacity .6s ease, transform .6s ease; }
+.js-fade [data-fade].is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .js-fade [data-fade] { opacity: 1; transform: none; transition: none; }
+}

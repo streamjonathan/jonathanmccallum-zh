@@ -1,0 +1,68 @@
+---
+layout: layouts/base.njk
+title: Jonathan McCallum
+permalink: /
+eleventyExcludeFromCollections: true
+---
+
+<h1 class="site-title">Jonathan McCallum</h1>
+<hr class="rule-gold">
+<p class="intro">一个普通的冲浪者，注视着对耶稣的信仰</p>
+
+<p class="social">
+  <a href="https://www.instagram.com/jonamccallum">Instagram</a>
+  <a href="https://www.tiktok.com/@jonamccallum">TikTok</a>
+  <a href="https://x.com/jonamccallum">X</a>
+  <a href="https://www.youtube.com/@Jonathanmccallum1">YouTube</a>
+  <a href="https://www.threads.com/@jonamccallum">Threads</a>
+  <a href="https://jonamccallum.substack.com">Substack</a>
+</p>
+
+<section class="featured" data-fade aria-labelledby="featured-heading">
+  <h2 id="featured-heading">最新文章</h2>
+  <ul class="featured-row" data-auto-carousel>
+  {% for post in collections.publishedPosts | reverse %}
+    {% if loop.index <= 10 %}
+    <li class="featured-card">
+      {% if post.data.shareImage %}<img class="featured-image" src="{{ post.data.shareImage }}" alt="" loading="lazy">{% else %}<div class="featured-image featured-image--empty" aria-hidden="true"></div>{% endif %}
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+      <span class="meta">{{ post.date | readableDate }}</span>
+      <p class="excerpt">{{ post.templateContent | excerpt(140) }}</p>
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+  <div class="featured-controls">
+    <button type="button" class="featured-arrow" data-carousel-prev aria-label="Previous article">‹</button>
+    <div class="featured-dots" role="tablist" aria-label="Newest articles"></div>
+    <button type="button" class="featured-arrow" data-carousel-next aria-label="Next article">›</button>
+  </div>
+</section>
+
+<h2>文章</h2>
+<ul class="article-list" data-fade>
+{% for post in collections.publishedPosts | reverse %}
+  <li>
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+    <span class="meta">{{ post.date | readableDate }}</span>
+    <p class="excerpt">{{ post.templateContent | excerpt(140) }}</p>
+  </li>
+{% endfor %}
+</ul>
+
+<hr class="rule-gold">
+<section class="watch-section" data-fade aria-labelledby="watch-heading">
+  <h2 id="watch-heading">视频</h2>
+  <ul class="watch-row">
+  {% set shown = [] %}
+  {% for post in collections.publishedPosts | reverse %}
+    {% if post.data.source_video and shown | length < 6 %}
+      {% set _ = shown.push(post) %}
+    <li class="watch-card">
+      <a href="{{ post.data.source_video }}">{{ post.data.title }}</a>
+      <p class="watch-title"><a href="{{ post.url }}">阅读文章: {{ post.data.title }}</a></p>
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</section>
