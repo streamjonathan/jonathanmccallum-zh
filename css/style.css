@@ -347,3 +347,134 @@ button[type="submit"] {
 .cookie-banner__buttons button { padding: 0.6rem 1.5rem; border: 1px solid var(--line); border-radius: 0.75rem; font: 1rem system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--text); background: var(--field-bg); cursor: pointer; min-height: 2.75rem; }
 .cookie-banner__buttons button:hover { border-color: var(--link); }
 @media (min-width: 40rem) { .cookie-banner { left: 1rem; right: auto; bottom: 1rem; max-width: 32rem; border: 1px solid var(--line); border-radius: 0.75rem; } }
+.interview-form { display: block; }
+.interview-form label { display: block; margin: 1.25rem 0 0.4rem; font-weight: 600; }
+.interview-form input[type="text"],
+.interview-form input[type="url"] {
+  width: 100%; padding: 0.75rem 1rem;
+  font: 1.05rem/1.5 "Newsreader", Georgia, "Times New Roman", serif;
+  border: 1px solid var(--line); border-radius: 0.75rem;
+  color: var(--text); background: var(--field-bg);
+}
+/* Suggest an artist: one short form, roomy fields, checkboxes in a row. */
+.suggest-form { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; max-width: 36rem; }
+.suggest-form label { width: 100%; }
+.suggest-form .optional { color: var(--muted); font-size: 0.9rem; }
+.suggest-form input[type="text"],
+.suggest-form input[type="url"] { flex: none; width: 100%; }
+.suggest-form textarea {
+  width: 100%; padding: 0.75rem 1rem; resize: vertical;
+  font: 1.05rem/1.5 "Newsreader", Georgia, "Times New Roman", serif;
+  border: 1px solid var(--line); border-radius: 0.75rem;
+  color: var(--text); background: var(--field-bg);
+}
+.interview-form textarea {
+  width: 100%; min-height: 10rem; padding: 0.75rem 1rem; resize: vertical;
+  font: 1.05rem/1.5 "Newsreader", Georgia, "Times New Roman", serif;
+  border: 1px solid var(--line); border-radius: 0.75rem;
+  color: var(--text); background: var(--field-bg);
+}
+.interview-form .field-note { color: var(--muted); font-size: 0.9rem; margin: 0.3rem 0 0; }
+.interview-form .permission {
+  display: flex; gap: 0.6rem; align-items: flex-start;
+  margin: 1.5rem 0; font-weight: 400;
+}
+.interview-form input[type="checkbox"] { flex: 0 0 auto; width: 1.25rem; height: 1.25rem; margin-top: 0.2rem; }
+.interview-form button[type="submit"] {
+  padding: 0.75rem 1.5rem; border: 0; border-radius: 0.75rem;
+  font: 1.05rem system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--btn-text); background: var(--btn-bg); cursor: pointer; min-height: 3.25rem;
+}
+.interview-code {
+  display: inline-block; margin: 0.5rem 0; padding: 0.5rem 1rem;
+  font: 700 1.75rem/1.2 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  letter-spacing: 0.25em; border: 1px solid var(--line); border-radius: 0.75rem;
+}
+/* Sign-in box: identity only, no posting, no messages, no password. */
+.interview-signin {
+  margin: 1.5rem 0; padding: 1rem 1.25rem;
+  border: 1px solid var(--line); border-radius: 0.75rem;
+}
+.interview-signin h2 { margin-top: 0; }
+.interview-ig-button {
+  display: inline-block; padding: 0.75rem 1.5rem; border-radius: 0.75rem;
+  font: 1.05rem system-ui, -apple-system, "Segoe UI", sans-serif; text-decoration: none;
+  color: var(--btn-text); background: var(--btn-bg); min-height: 3.25rem;
+}
+/* Email sign-in: same plain inputs as the interview form. */
+.interview-signin label { display: block; margin: 0.75rem 0 0.4rem; font-weight: 600; }
+.interview-signin input[type="email"],
+.interview-signin input[type="text"] {
+  width: 100%; padding: 0.75rem 1rem;
+  font: 1.05rem/1.5 "Newsreader", Georgia, "Times New Roman", serif;
+  border: 1px solid var(--line); border-radius: 0.75rem;
+  color: var(--text); background: var(--field-bg);
+}
+.interview-signin button[type="button"] {
+  margin-top: 0.5rem; padding: 0.6rem 1.25rem; border: 1px solid var(--line); border-radius: 0.75rem;
+  font: 1rem system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--text); background: var(--field-bg); cursor: pointer;
+}
+.interview-signin button[type="button"]:disabled { opacity: 0.6; cursor: default; }
+/* Signed-in status: one bold, unmistakable line — "Signed in with LINE as Jonathan. Sign out". */
+#interview-signedin {
+  font-weight: 600; padding: 0.75rem 1rem;
+  border-left: 3px solid var(--link); border-radius: 0 0.5rem 0.5rem 0;
+  background: var(--field-bg);
+}
+#interview-signedin a { margin-left: 0.5rem; }
+/* Interview questions: collapsed headings, click to open and answer. */
+.interview-question {
+  margin: 1rem 0; padding: 0.75rem 1rem;
+  border: 1px solid var(--line); border-radius: 0.75rem;
+}
+.interview-question summary {
+  cursor: pointer; font-weight: 600;
+  font-family: "Fraunces", Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-size: 1.12rem; line-height: 1.4;
+}
+.interview-question textarea { margin-top: 0.75rem; }
+#interview-copy {
+  width: 100%; min-height: 12rem; padding: 0.75rem 1rem; resize: vertical;
+  font: 1rem/1.5 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  border: 1px solid var(--line); border-radius: 0.75rem;
+  color: var(--text); background: var(--field-bg);
+}
+#interview-copy-button {
+  padding: 0.6rem 1.25rem; border: 1px solid var(--line); border-radius: 0.75rem;
+  font: 1rem system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--text); background: var(--field-bg); cursor: pointer; min-height: 2.75rem;
+}
+#interview-copy-result { color: var(--muted); margin-left: 0.5rem; }
+.suggest-form fieldset.suggest-kinds {
+  border: 1px solid var(--line); border-radius: 0.75rem;
+  padding: 0.75rem 1rem 1rem; margin: 0.25rem 0;
+  display: flex; flex-direction: column; gap: 0.6rem;
+}
+.suggest-form fieldset.suggest-kinds legend { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-weight: 600; padding: 0 0.25rem; }
+.suggest-form fieldset.suggest-kinds label { width: 100%; display: flex; align-items: center; gap: 0.6rem; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; cursor: pointer; }
+.suggest-form fieldset.suggest-kinds input[type="checkbox"] { min-height: 0; width: 1.15rem; height: 1.15rem; flex: none; accent-color: var(--link); }
+.suggest-form button[type="button"] {
+  align-self: flex-start; padding: 0.75rem 1.5rem; border: 0; border-radius: 0.75rem;
+  font: 1.05rem system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--btn-text); background: var(--btn-bg); cursor: pointer; min-height: 3.25rem;
+}
+.suggest-form button[type="button"]:disabled { opacity: 0.6; cursor: default; }
+#suggest-result { color: var(--muted); }
+/* Suggest-an-artist carousel: a sideways row of circle photos. The
+   reader scrolls it (phone or desktop) and taps a photo to fill the
+   form in. No autoplay — it only moves when the reader moves it. */
+.suggest-carousel { display: flex; gap: 1rem; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0.5rem 0.25rem 1rem; margin: 0.5rem 0; -webkit-overflow-scrolling: touch; }
+.suggest-pick { scroll-snap-align: start; flex: 0 0 7rem; width: 7rem; background: none; border: 0; padding: 0; cursor: pointer; text-align: center; color: var(--text); }
+.suggest-pick img { width: 5.5rem; height: 5.5rem; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto; }
+.suggest-pick:hover img, .suggest-pick:focus-visible img { outline: 2px solid var(--link); outline-offset: 2px; }
+.suggest-pick__name { display: block; font-family: "Fraunces", Georgia, "Iowan Old Style", "Times New Roman", serif; font-weight: 600; font-size: 0.95rem; margin-top: 0.4rem; }
+.suggest-pick__note { display: block; color: var(--muted); font-size: 0.85rem; line-height: 1.35; margin-top: 0.15rem; }
+.suggest-carousel__more { color: var(--muted); }
+/* Interview questions are bilingual: the English question sits under the native one, smaller and muted. */
+.interview-question__en { display: block; color: var(--muted); font-size: 0.9rem; font-weight: 400; margin-top: 0.35rem; }
+/* Return-home button: every lang page links back to the English original, top and bottom. */
+.return-home-bar { padding: 0.75rem 1rem 0; }
+.return-home { display: inline-block; padding: 0.6rem 1.1rem; border: 2px solid var(--link); border-radius: 0.75rem; font-weight: 600; text-decoration: none; color: var(--text); }
+.return-home:hover, .return-home:focus-visible { background: var(--field-bg); }
+.site-footer .return-home { margin-bottom: 0.5rem; }

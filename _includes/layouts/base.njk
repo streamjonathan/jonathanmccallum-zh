@@ -91,8 +91,8 @@
 </script>
 {% endif %}
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed/">
-<link rel="preload" href="/css/style.css?v=14" as="style">
-<link rel="stylesheet" href="/css/style.css?v=13">
+<link rel="preload" href="/css/style.css?v=15" as="style">
+<link rel="stylesheet" href="/css/style.css?v=15">
 </head>
 <body>
 <a class="skip-link" href="#main">跳到内容</a>
@@ -100,10 +100,14 @@
   <a class="site-header__title" href="/">Jonathan McCallum</a>
   <button id="theme-toggle" type="button">深色</button>
 </header>
+<nav class="return-home-bar" aria-label="English version">
+  <a class="return-home" href="https://jonathanmccallum.com{{ page.url }}">Return home to Jonathan <span lang="zh">· 返回 Jonathan 的主页</span></a>
+</nav>
 <main id="main">
 {{ content | safe }}
 </main>
 <footer class="site-footer">
+  <p><a class="return-home" href="https://jonathanmccallum.com{{ page.url }}">Return home to Jonathan <span lang="zh">· 返回 Jonathan 的主页</span></a></p>
     <p>{{ site.title }} — <a href="/feed/">RSS feed</a> · <a href="/search/">搜索</a> · <a href="/privacy/">隐私</a> · <a href="#" id="cookie-settings">Cookie 设置</a></p>
   <p>Connect — <a href="https://www.instagram.com/jonamccallum">Instagram</a> · <a href="https://www.threads.com/@jonamccallum">Threads</a> · <a href="https://www.youtube.com/@Jonathanmccallum1">YouTube</a> · <a href="https://jonamccallum.substack.com">Substack</a> · <a href="/feed/">RSS</a></p>
   <p>打个招呼 — <a href="#" data-contact-email data-contact-email-text>给我发邮件</a></p>
@@ -112,6 +116,8 @@
 <script src="/js/main.js?v=8" defer></script>
 <script src="/js/contact.js?v=1" defer></script>
 <script src="/js/consent.js?v=1" defer></script>
+<script src="/js/suggest.js?v=1" defer></script>
+<script src="/js/interview.js?v=1" defer></script>
 <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie" hidden>
   <p><strong>Cookie.</strong> 本站保持简单：它只会在你自己的设备上记住你选择的浅色或深色主题。这里没有任何东西会追踪你。 <a href="/privacy/">阅读隐私页面</a>.</p>
   <p class="cookie-banner__buttons">
