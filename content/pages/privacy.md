@@ -1,49 +1,118 @@
 ---
-title: "Privacy"
+title: "隐私"
 slug: privacy
 original_url: https://jonathanmccallum.com/privacy/
 ---
 
-# Privacy
+# 隐私
 
-This site is run by Jonathan McCallum. It is a small personal site: writing, and a chat that answers from that writing. There are no accounts, no tracking, no advertising, and nothing for sale.
+本站由乔纳森·麦卡勒姆（Jonathan McCallum）运营，他住在西班牙盖塔里亚。这是一个小小的个人网站：有文章，还有一个根据这些文章回答问题的聊天工具。这里不需要创建账号，没有追踪，没有广告，也没有任何东西出售。本站对世界各地的所有访客都遵循欧洲隐私法《通用数据保护条例》（GDPR）。
 
-If you need to ask about anything on this page, or about your personal data, write to Jonathan at <a href="#" data-contact-email data-contact-email-text>Email me</a>. You can also message him on [Instagram](https://www.instagram.com/jonamccallum) or [Threads](https://www.threads.com/@jonamccallum).
+如果你对本页内容或你的个人数据有任何问题，请写信给乔纳森：<a href="#" data-contact-email data-contact-email-text>给我发邮件</a>。你也可以在 [Instagram](https://www.instagram.com/jonamccallum) 或 [Threads](https://www.threads.com/@jonamccallum) 上给他发消息。
 
-## The chat: "Interact with Jonathan's writing"
+## 谁负责你的数据
 
-When you type a question, it is sent to Cloudflare — the company that hosts this site — so its AI can look through Jonathan's published writing and draft an answer. The answer comes only from his writing, with a link to the post it came from.
+乔纳森·麦卡勒姆是本站的数据控制者。这意味着由他决定收集什么数据、为什么收集。他不是一家公司，也没有数据保护专员——这样的小型个人网站不需要。
 
-- The site does not store your questions.
-- The chat is not Jonathan. It is an AI, and it can get things wrong.
-- Cloudflare is a US company, so your question may be processed outside Europe. That transfer is part of running the chat.
+## 收集什么数据，为什么收集
 
-## Leave a note
+### 聊天：“与乔纳森的文字互动”
 
-Notes are anonymous. The site asks for no name, no email, and no social media handle — please don't put personal details in a note. A note is stored on Cloudflare until Jonathan has read it, then it is deleted. If you would like a reply, write to him at <a href="#" data-contact-email data-contact-email-text>Email me</a> or message him on social media instead.
+当你输入一个问题时，它会被发送给 Cloudflare——托管本站的公司——以便它的人工智能查阅乔纳森已发表的文字并起草答案。答案只来自他的文字，并附上相关文章的链接。
 
-## What is not collected
+- 你的问题本身不会被保存。它会被转换成一个单向代码（哈希值），以便如果有人问同样的问题，网站可以找到已保存的答案。好的答案会保留 7 天，然后删除。
+- 聊天工具不是乔纳森。它是一个人工智能，可能会出错。
+- 聊天的法律依据是正当利益：运营一个根据已发表文字回答问题的小型网站。
 
-- No cookies, no tracking, no analytics, no advertising.
-- Search runs entirely on your own device.
-- A YouTube video only loads if you tap play on it.
-- The site never asks for your email address or social media details. If you ever see a form here asking for them, it is not part of this site — please don't fill it in.
+### 登录
 
-## Your rights under European law (GDPR)
+你可以使用 Google、Instagram、LINE 或电子邮件登录，这样乔纳森就知道某个故事、建议或评论确实来自你。登录只是证明你是谁。它不能替你发布任何内容，不能读取你的消息，也看不到任何隐私内容。你的登录信息只在你与 Google、Instagram、LINE 或你的电子邮件服务商之间——本站永远看不到你的密码。
 
-This site follows the EU's General Data Protection Regulation (GDPR) as its standard, wherever you are in the world.
+每种登录方式会与本站分享的信息：
 
-- You can ask what personal data, if any, this site holds about you.
-- You can ask for it to be corrected or deleted, or for its use to be restricted.
-- You can object to its use, and you can complain to your local data protection authority. Jonathan lives in Spain, where the authority is the AEPD (Agencia Española de Protección de Datos).
-- Because the site stores nothing that identifies you — no accounts, no emails, no tracking — there is usually nothing to show or delete. Ask anyway and he will answer.
+- Google：你的姓名和已验证的电子邮件地址。
+- Instagram：你的用户名和个人主页链接。
+- LINE：你在 LINE 上显示的名字。
+- 电子邮件：你的电子邮件地址，通过一个 6 位数验证码证明，该验证码只能使用一次，10 分钟后过期。
 
-The legal basis for the chat is legitimate interest: running a small site that answers questions from published writing. The legal basis for a note is your consent: you choose to leave one.
+你的登录信息只会显示给乔纳森，以便他确认你是真实的人并回复你。这些信息永远不会在网站上公开显示。法律依据是你的同意：由你选择登录。
 
-## Children
+### 分享你的故事（访谈）
 
-This site is not aimed at children. If you are under 16, please ask a parent or guardian before writing anything here.
+如果你分享你的故事，本站会保留你的姓名、社交主页链接、你对三个问题的回答，以及你使用了哪种登录方式、你的主页是否已验证的记录。任何内容都不会在乔纳森先检查并与你沟通过之前发布。法律依据是你的同意：由你选择发送，并勾选许可框。
 
-## Changes
+### 推荐艺术家
 
-This page will be updated if anything about the site changes. Last updated 21 November 2026.
+如果你推荐一位艺术家，本站会保留艺术家的姓名和主页链接、你希望乔纳森为他们做什么、为什么是他们，如果你提供了自己的姓名和链接，也会保留。不需要登录。法律依据是你的同意。
+
+### 留言
+
+留言是匿名的。本站不要求提供姓名、电子邮件或社交媒体账号——请不要在留言中写下个人资料。留言会一直保留，直到乔纳森读完并删除。如果你想要回复，请写信给他：<a href="#" data-contact-email data-contact-email-text>给我发邮件</a>，或在社交媒体上给他发消息。法律依据是你的同意：由你选择留言。
+
+### 评论
+
+如果你对一篇文章发表评论，本站会保留你的姓名、评论内容，以及你添加的社交主页或视频链接。评论会在乔纳森检查后才会显示。法律依据是你的同意。
+
+### 搜索
+
+搜索完全在你自己的设备上进行。你搜索的任何内容都不会发送到任何地方。
+
+### 视频
+
+只有当你点击播放时，YouTube 视频才会加载。在此之前，不会加载任何视频，也不会向 YouTube 发送任何内容。
+
+## Cookie
+
+本站使用的 Cookie 非常少，没有一个会追踪你。
+
+| Cookie 或存储 | 作用 | 保存多久 |
+|---|---|---|
+| `interview_session` | 在你分享故事或评论时保持登录状态。 | 1 小时 |
+| `theme`（保存在你的设备上） | 记住你选择的是浅色还是深色主题。 | 直到你更改它 |
+| `cookie-consent`（保存在你的设备上） | 记住你接受还是拒绝了 Cookie，这样横幅就不会再次询问。 | 直到你更改它 |
+| Google 登录 | 只有在你接受 Cookie 的情况下：Google 自己的登录按钮会从 Google 加载，Google 可能会设置自己的 Cookie。请参阅[Google 的隐私政策](https://policies.google.com/privacy)。 | 由 Google 决定 |
+
+你第一次访问时，会看到一个 Cookie 横幅。它有两个并排的按钮：接受和拒绝。两个按钮的作用是一样的——没有任何花招。如果你拒绝，网站仍然可以正常使用：你可以阅读所有内容、使用聊天工具，并通过 Instagram、LINE 或电子邮件登录。只有 Google 登录按钮会保持关闭，因为它需要 Google 的 Cookie 才能加载。你可以随时通过任何页面底部的“Cookie 设置”链接改变主意。
+
+## 你的数据存放在哪里
+
+本站由 Cloudflare 托管，这是一家美国公司。页面、聊天工具、登录和保存的留言都存放在 Cloudflare 的网络中，位于美国和欧洲。电子邮件登录验证码由 Resend 发送，也是一家美国公司：邮件从爱尔兰发出，但 Resend 会将邮件和投递详情在美国保存 30 天。乔纳森收到的关于新留言、故事和建议的邮件会发送到他自己的 Gmail 账户。
+
+向欧洲以外传输数据受 Cloudflare 和 Resend 数据处理协议中的标准合同条款以及欧盟—美国数据隐私框架的保障，两家公司都参与了该框架。
+
+## 数据保留多久
+
+- 登录会话：1 小时。登录验证码：10 分钟。
+- 聊天答案：7 天，然后删除。
+- 留言、故事、建议和评论：保留到乔纳森处理完并删除为止。
+- Resend 的登录验证码：由 Resend 保留 30 天。
+
+## 出售与广告
+
+本站不会出售你的个人信息，不会为广告而分享你的信息，本站也没有广告。唯一处理你的数据的其他方是上面提到的服务（Cloudflare、Resend 和 Gmail），它们处理数据只是为了运行本站。
+
+## 你在欧洲法律（GDPR）下的权利
+
+本站遵循欧盟《通用数据保护条例》（GDPR）作为标准，无论你在世界何处。
+
+- 你可以询问本站是否持有你的个人数据，以及持有何种数据。
+- 你可以要求更正或删除这些数据，或限制其使用。
+- 你可以要求获得一份副本，也可以反对使用你的数据。
+- 你可以随时撤回同意——例如退出登录，或请乔纳森删除你发送的内容。
+- 你可以向当地的数据保护机构投诉。乔纳森住在西班牙，那里的机构是 AEPD（Agencia Española de Protección de Datos，aepd.es）。
+
+由于本站存储的数据极少，通常没有什么可以展示或删除的。但无论如何都可以问，他会回答。想询问，请写信给乔纳森：<a href="#" data-contact-email data-contact-email-text>给我发邮件</a>，或在 [Instagram](https://www.instagram.com/jonamccallum) 或 [Threads](https://www.threads.com/@jonamccallum) 上给他发消息。
+
+## 未成年人
+
+本站不适合未满 18 岁的人。本站谈论对耶稣的信仰，属于宗教内容，因此是为成年人而写的。如果你未满 18 岁，请不要在这里分享个人信息，也不要给乔纳森写信。
+
+在西班牙，法律规定，未满 14 岁的儿童在网上分享个人资料之前，需要父母或监护人同意。本站自己的规定比这更严格：未满 18 岁，本站不适合你。
+
+## 法律声明
+
+这是一个个人网站。这里的一切都是乔纳森自己的文字和他自己的观点。这不是任何形式的专业建议——不是医疗、法律、财务或其他方面的建议。聊天工具只根据他已发表的文字回答，可能会出错。如果本站有什么内容错误或过时，请告诉他，他会改正。
+
+## 更改
+
+如果本站有任何变化，本页将会更新。最后更新：2026 年 11 月 23 日。
