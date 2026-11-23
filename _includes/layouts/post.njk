@@ -10,6 +10,7 @@ layout: layouts/base.njk
   {{ content | safe }}
   </div>
 </article>
+{% include "get-involved.njk" %}
 {% set prevPost = collections.publishedPosts | getPreviousCollectionItem(page) %}
 {% set nextPost = collections.publishedPosts | getNextCollectionItem(page) %}
 {% if prevPost or nextPost %}
