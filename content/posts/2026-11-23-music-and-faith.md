@@ -67,11 +67,6 @@ shareImage: /images/music-faith/sienvanessa.jpg
 <span class="ig-card__text"><span class="ig-card__name">基恩敬拜</span>
 <span class="ig-card__note">基恩敬拜，用詩歌把人帶到上帝面前。</span></span>
 </a>
-<a class="ig-card" href="https://www.instagram.com/reel/Dc8fLrsB51K/" target="_blank" rel="noopener">
-<img class="ig-card__img" src="/images/music-faith/onewayworshiphk.jpg" alt="ONEWAY WORSHIP" loading="lazy" width="150" height="150">
-<span class="ig-card__text"><span class="ig-card__name">ONEWAY WORSHIP</span>
-<span class="ig-card__note">一路敬拜，無論如何都讚美上帝。</span></span>
-</a>
 <a class="ig-card" href="https://www.instagram.com/reel/Df7058sBHsD/" target="_blank" rel="noopener">
 <img class="ig-card__img" src="/images/music-faith/stream_of_praise.jpg" alt="讚美之泉" loading="lazy" width="150" height="150">
 <span class="ig-card__text"><span class="ig-card__name">讚美之泉</span>
@@ -79,7 +74,7 @@ shareImage: /images/music-faith/sienvanessa.jpg
 </a>
 </div>
 
-我想知道，是哪些歌陪伴着你走过来的。哪首歌在言语不够用的时候撑住了你的信仰？你会先听这十二首中的哪一首？
+我想知道，是哪些歌陪伴着你走过来的。哪首歌在言语不够用的时候撑住了你的信仰？你会先听这十一首中的哪一首？
 
 告诉我你在听什么。我一直在找新歌。
 
