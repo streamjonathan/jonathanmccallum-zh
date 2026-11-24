@@ -3,7 +3,7 @@ title: "音乐与信仰"
 date: 2026-11-23
 slug: music-and-faith
 draft: false
-shareImage: /images/music-faith/sonreal.jpg
+shareImage: /images/music-faith/sienvanessa.jpg
 ---
 
 我花了很多时间在 Instagram 上听音乐人。这些是我最近一直在听的一些人。
@@ -14,70 +14,68 @@ shareImage: /images/music-faith/sonreal.jpg
 
 他们唱的不全是敬拜歌曲。他们大多只是在唱生活，而信仰是其中的一部分。这就是我喜欢他们的原因。点一张卡片，就可以在 Instagram 上听这首歌。
 
-我还为 SonReal 的新歌做了一个反应视频。你可以在这里看：
-
-[我对 SonReal 新视频的反应](https://www.youtube.com/shorts/wePjZMr6beE)
+这些歌是中文歌。这些是用中文唱歌的音乐人——有人唱敬拜歌，有人唱生活，信仰是其中的一部分。
 
 <div class="ig-grid">
-<a class="ig-card" href="https://www.instagram.com/reel/DgBgmKwB84s/" target="_blank" rel="noopener">
-<img class="ig-card__img" src="/images/music-faith/sonreal.jpg" alt="SonReal" loading="lazy" width="150" height="150">
-<span class="ig-card__text"><span class="ig-card__name">SonReal</span>
-<span class="ig-card__note">一首有趣又充满希望的说唱，讲的是听到好音乐就知道是好音乐。不要以貌取人。</span></span>
+<a class="ig-card" href="https://www.instagram.com/reel/DgCa9G0vnVj/" target="_blank" rel="noopener">
+<img class="ig-card__img" src="/images/music-faith/sienvanessa.jpg" alt="璽恩 SiEnVanessa" loading="lazy" width="150" height="150">
+<span class="ig-card__text"><span class="ig-card__name">璽恩 SiEnVanessa</span>
+<span class="ig-card__note">中文敬拜歌手，用音樂分享信仰與生活。</span></span>
 </a>
-<a class="ig-card" href="https://www.instagram.com/reel/DgDnpYFAUjr/" target="_blank" rel="noopener">
-<img class="ig-card__img" src="/images/music-faith/tamzene.jpg" alt="Tamzene" loading="lazy" width="150" height="150">
-<span class="ig-card__text"><span class="ig-card__name">Tamzene</span>
-<span class="ig-card__note">“I'll save you a seat.” 一首温柔的歌，和一把空着的椅子。</span></span>
+<a class="ig-card" href="https://www.instagram.com/reel/Df9xRU_KPwP/" target="_blank" rel="noopener">
+<img class="ig-card__img" src="/images/music-faith/ariel_tsai.jpg" alt="Ariel Tsai" loading="lazy" width="150" height="150">
+<span class="ig-card__text"><span class="ig-card__name">Ariel Tsai</span>
+<span class="ig-card__note">創作歌手，唱出心裡的歌。</span></span>
 </a>
-<a class="ig-card" href="https://www.instagram.com/reel/Df5X6L3K-3W/" target="_blank" rel="noopener">
-<img class="ig-card__img" src="/images/music-faith/lilyfittsmusic.jpg" alt="Lily Fitts" loading="lazy" width="150" height="150">
-<span class="ig-card__text"><span class="ig-card__name">Lily Fitts</span>
-<span class="ig-card__note">她的歌 “Notice” 终于发布了，距离她第一次弹唱已经一年多了。</span></span>
+<a class="ig-card" href="https://www.instagram.com/reel/DfpGDW4TQiF/" target="_blank" rel="noopener">
+<img class="ig-card__img" src="/images/music-faith/edwardchenmusic.jpg" alt="Edward Chen" loading="lazy" width="150" height="150">
+<span class="ig-card__text"><span class="ig-card__name">Edward Chen</span>
+<span class="ig-card__note">唱出對主的依靠。</span></span>
 </a>
-<a class="ig-card" href="https://www.instagram.com/reel/DgE-ybeI6ko/" target="_blank" rel="noopener">
-<img class="ig-card__img" src="/images/music-faith/fatheringstarlings.jpg" alt="Fathering Starlings" loading="lazy" width="150" height="150">
-<span class="ig-card__text"><span class="ig-card__name">Fathering Starlings</span>
-<span class="ig-card__note">“Your Heart in the Fire” —— 来自北方的低保真民谣，诚实、沧桑、真实。</span></span>
+<a class="ig-card" href="https://www.instagram.com/reel/DfC3jr9xk9A/" target="_blank" rel="noopener">
+<img class="ig-card__img" src="/images/music-faith/leo_chang0806.jpg" alt="Leo Chang" loading="lazy" width="150" height="150">
+<span class="ig-card__text"><span class="ig-card__name">Leo Chang</span>
+<span class="ig-card__note">寫中文詩歌，唱給主聽。</span></span>
 </a>
-<a class="ig-card" href="https://www.instagram.com/reel/DfkSMZhpium/" target="_blank" rel="noopener">
-<img class="ig-card__img" src="/images/music-faith/naterosemusic.jpg" alt="Nate Rose" loading="lazy" width="150" height="150">
-<span class="ig-card__text"><span class="ig-card__name">Nate Rose</span>
-<span class="ig-card__note">他去年把生命交给了上帝。现在他想讲自己的故事，并在其中赞美他。</span></span>
+<a class="ig-card" href="https://www.instagram.com/reel/Df9Lsy4uw88/" target="_blank" rel="noopener">
+<img class="ig-card__img" src="/images/music-faith/karenkongmusic.jpg" alt="Karen Kong" loading="lazy" width="150" height="150">
+<span class="ig-card__text"><span class="ig-card__name">Karen Kong</span>
+<span class="ig-card__note">創作歌手，唱福音歌，把光唱給你聽。</span></span>
 </a>
-<a class="ig-card" href="https://www.instagram.com/p/DgBMyeNkkyO/" target="_blank" rel="noopener">
-<img class="ig-card__img" src="/images/music-faith/ostonmusic.jpg" alt="OSTON" loading="lazy" width="150" height="150">
-<span class="ig-card__text"><span class="ig-card__name">OSTON</span>
-<span class="ig-card__note">他的新歌 “Not Alone”，还有旧金山一个房间里的人在唱每一个词。</span></span>
+<a class="ig-card" href="https://www.instagram.com/reel/DgCZGXOy_Xn/" target="_blank" rel="noopener">
+<img class="ig-card__img" src="/images/music-faith/joshua_band.jpg" alt="Joshua Band" loading="lazy" width="150" height="150">
+<span class="ig-card__text"><span class="ig-card__name">Joshua Band</span>
+<span class="ig-card__note">中文敬拜樂團，為下一個世代唱出敬拜的聲音。</span></span>
 </a>
-<a class="ig-card" href="https://www.instagram.com/reel/Df1qtokoyBh/" target="_blank" rel="noopener">
-<img class="ig-card__img" src="/images/music-faith/kenta_dedachi.jpg" alt="Kenta Dedachi" loading="lazy" width="150" height="150">
-<span class="ig-card__text"><span class="ig-card__name">Kenta Dedachi</span>
-<span class="ig-card__note">“Secret Fort” —— 教堂后的童年时光，傍晚的钟声，最好的朋友和想象的世界。</span></span>
+<a class="ig-card" href="https://www.instagram.com/reel/Df6wbfVOUU7/" target="_blank" rel="noopener">
+<img class="ig-card__img" src="/images/music-faith/heavenlymelody_official.jpg" alt="天韻 Heavenly Melody" loading="lazy" width="150" height="150">
+<span class="ig-card__text"><span class="ig-card__name">天韻 Heavenly Melody</span>
+<span class="ig-card__note">天韻合唱團，用歌聲傳揚福音。</span></span>
 </a>
-<a class="ig-card" href="https://www.instagram.com/reel/DfCRnSiPXa5/" target="_blank" rel="noopener">
-<img class="ig-card__img" src="/images/music-faith/jeffarrandale.jpg" alt="Jeff Arrandale" loading="lazy" width="150" height="150">
-<span class="ig-card__text"><span class="ig-card__name">Jeff Arrandale</span>
-<span class="ig-card__note">一首来自路加福音第 15 章的新歌，浪子的故事。“Let Me Go”。</span></span>
+<a class="ig-card" href="https://www.instagram.com/reel/DfjyjcdhUDQ/" target="_blank" rel="noopener">
+<img class="ig-card__img" src="/images/music-faith/glow1c.jpg" alt="GLOW 敬拜青年" loading="lazy" width="150" height="150">
+<span class="ig-card__text"><span class="ig-card__name">GLOW 敬拜青年</span>
+<span class="ig-card__note">敬拜青年，一起為神奔跑。</span></span>
 </a>
-<a class="ig-card" href="https://www.instagram.com/reel/Df71X0lzZsN/" target="_blank" rel="noopener">
-<img class="ig-card__img" src="/images/music-faith/allison_eide.jpg" alt="Allison Eide" loading="lazy" width="150" height="150">
-<span class="ig-card__text"><span class="ig-card__name">Allison Eide</span>
-<span class="ig-card__note">“Jesus is kind. Tour is a gift.” 她的歌，在家乡演唱。</span></span>
+<a class="ig-card" href="https://www.instagram.com/reel/DflYHXEi4lO/" target="_blank" rel="noopener">
+<img class="ig-card__img" src="/images/music-faith/thehope_music.jpg" alt="The Hope Music" loading="lazy" width="150" height="150">
+<span class="ig-card__text"><span class="ig-card__name">The Hope Music</span>
+<span class="ig-card__note">中文敬拜音樂，唱出對主的盼望。</span></span>
 </a>
-<a class="ig-card" href="https://www.instagram.com/reel/DgD31mXBDcn/" target="_blank" rel="noopener">
-<img class="ig-card__img" src="/images/music-faith/rachelpurcellmusic.jpg" alt="Rachel Purcell" loading="lazy" width="150" height="150">
-<span class="ig-card__text"><span class="ig-card__name">Rachel Purcell</span>
-<span class="ig-card__note">她的歌 “keep going” —— 梦幻复古的耶稣音乐，现已发布。</span></span>
+<a class="ig-card" href="https://www.instagram.com/reel/Df9Zvdwxhlq/" target="_blank" rel="noopener">
+<img class="ig-card__img" src="/images/music-faith/amazinggraceworship.jpg" alt="基恩敬拜" loading="lazy" width="150" height="150">
+<span class="ig-card__text"><span class="ig-card__name">基恩敬拜</span>
+<span class="ig-card__note">基恩敬拜，用詩歌把人帶到上帝面前。</span></span>
 </a>
-<a class="ig-card" href="https://www.instagram.com/reel/Df9vziqCJtC/" target="_blank" rel="noopener">
-<img class="ig-card__img" src="/images/music-faith/haleyjonesofficial.jpg" alt="Haley Jones" loading="lazy" width="150" height="150">
-<span class="ig-card__text"><span class="ig-card__name">Haley Jones</span>
-<span class="ig-card__note">“Everybody knows somebody who needs to hear about Jesus.”</span></span>
+<a class="ig-card" href="https://www.instagram.com/reel/Dc8fLrsB51K/" target="_blank" rel="noopener">
+<img class="ig-card__img" src="/images/music-faith/onewayworshiphk.jpg" alt="ONEWAY WORSHIP" loading="lazy" width="150" height="150">
+<span class="ig-card__text"><span class="ig-card__name">ONEWAY WORSHIP</span>
+<span class="ig-card__note">一路敬拜，無論如何都讚美上帝。</span></span>
 </a>
-<a class="ig-card" href="https://www.instagram.com/reel/DgAmATaizM0/" target="_blank" rel="noopener">
-<img class="ig-card__img" src="/images/music-faith/gracegrabermusic.jpg" alt="Grace Graber" loading="lazy" width="150" height="150">
-<span class="ig-card__text"><span class="ig-card__name">Grace Graber</span>
-<span class="ig-card__note">讲述她心理健康旅程的歌。而且也是流行朋克。</span></span>
+<a class="ig-card" href="https://www.instagram.com/reel/Df7058sBHsD/" target="_blank" rel="noopener">
+<img class="ig-card__img" src="/images/music-faith/stream_of_praise.jpg" alt="讚美之泉" loading="lazy" width="150" height="150">
+<span class="ig-card__text"><span class="ig-card__name">讚美之泉</span>
+<span class="ig-card__note">讚美之泉，中文敬拜音樂事工。</span></span>
 </a>
 </div>
 
