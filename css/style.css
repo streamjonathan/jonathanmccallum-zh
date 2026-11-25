@@ -481,3 +481,20 @@ button[type="submit"] {
 
 /* Translation note shown at the top of article pages (also in the footer). */
 .translation-note--top { font-size: 0.9rem; color: var(--muted); margin: 0.5rem 0 0; }
+/* Row hint: only on touch screens, where swiping works — same
+   pattern as the swipe hint on article pages. */
+.featured-row__hint { display: none; }
+@media (pointer: coarse) {
+  .featured-row__hint {
+    display: block; text-align: center; margin: 1.25rem 0 -0.25rem;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 0.9rem; color: var(--muted);
+  }
+}
+/* Row hint: the same touch-only swipe hint for every sideways row. */
+.row-hint { display: none; }
+@media (pointer: coarse) {
+  .row-hint {
+    display: block; text-align: center; margin: 1.25rem 0 -0.25rem;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 0.9rem; color: var(--muted);
+  }
+}

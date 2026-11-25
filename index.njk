@@ -22,6 +22,7 @@ eleventyExcludeFromCollections: true
 
 <section class="featured" data-fade aria-labelledby="featured-heading">
   <h2 id="featured-heading">最新文章</h2>
+  <p class="featured-row__hint">更多新文章——左滑查看下一篇 <span aria-hidden="true">→</span></p>
   <ul class="featured-row" data-auto-carousel>
   {% for post in collections.publishedPosts | reverse %}
     {% if loop.index <= 10 %}
@@ -55,6 +56,7 @@ eleventyExcludeFromCollections: true
 <hr class="rule-gold">
 <section class="watch-section" data-fade aria-labelledby="watch-heading">
   <h2 id="watch-heading">视频</h2>
+  <p class="row-hint">更多视频——左滑查看下一个 <span aria-hidden="true">→</span></p>
   <ul class="watch-row">
   {% set shown = [] %}
   {% for post in collections.publishedPosts | reverse %}
