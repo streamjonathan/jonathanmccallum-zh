@@ -41,6 +41,28 @@ eleventyExcludeFromCollections: true
   </div>
 </section>
 
+<section class="start-here" data-fade aria-labelledby="start-here-heading">
+  <h2 id="start-here-heading">从这里开始</h2>
+  <p>三个很好的起点。</p>
+  {% set newestPosts = collections.publishedPosts | reverse %}
+  {% set startHere = [] %}
+  {% for post in newestPosts %}
+    {% if post.data.shareImage and startHere | length < 3 %}{% set _ = startHere.push(post) %}{% endif %}
+  {% endfor %}
+  <ul class="start-here__row">
+  {% for post in startHere %}
+    <li class="start-here__card">
+      <a class="start-here__link" href="{{ post.url }}">
+        <img class="start-here__image" src="{{ post.data.shareImage }}" alt="" loading="lazy">
+        <span class="start-here__title">{{ post.data.title }}</span>
+        <span class="meta">{{ post.date | readableDate }}</span>
+        <span class="excerpt">{{ post.templateContent | excerpt(140) }}</span>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+
 <h2>文章</h2>
 <ul class="article-list" data-fade>
 {% for post in collections.publishedPosts | reverse %}

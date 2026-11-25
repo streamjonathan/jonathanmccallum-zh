@@ -481,3 +481,16 @@ button[type="submit"] {
 
 /* Translation note shown at the top of article pages (also in the footer). */
 .translation-note--top { font-size: 0.9rem; color: var(--muted); margin: 0.5rem 0 0; }
+
+/* Start here: the three newest illustrated articles, above the full list.
+   Gold / silver / bronze top rules, in the site's rotating-accent order. */
+.start-here { margin-top: 1.5rem; }
+.start-here__row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; list-style: none; padding: 0; margin: 1rem 0; }
+.start-here__card { border-top: 3px solid var(--link); padding-top: 0.9rem; }
+.start-here__card:nth-child(2) { border-top-color: #9aa0a6; }
+.start-here__card:nth-child(3) { border-top-color: #b0793f; }
+.start-here__image { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; margin-bottom: 0.5rem; }
+.start-here__title { display: block; font-size: 1.12rem; font-family: "Fraunces", Georgia, "Iowan Old Style", "Times New Roman", serif; font-weight: 600; color: var(--text); }
+.start-here__link:hover .start-here__title { color: var(--link); }
+.start-here__card .excerpt { color: var(--muted); font-size: 0.95rem; margin: 0.35rem 0 0; }
+@media (max-width: 40rem) { .start-here__row { grid-template-columns: 1fr; } }
