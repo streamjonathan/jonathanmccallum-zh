@@ -6,7 +6,7 @@ original_url: https://jonathanmccallum.com/privacy/
 
 # 隐私
 
-本站由乔纳森·麦卡勒姆（Jonathan McCallum）运营，他住在西班牙盖塔里亚。这是一个小小的个人网站：有文章，还有一个根据这些文章回答问题的聊天工具。这里不需要创建账号，没有追踪，没有广告，也没有任何东西出售。本站对世界各地的所有访客都遵循欧洲隐私法《通用数据保护条例》（GDPR）。
+本站由乔纳森·麦卡勒姆（Jonathan McCallum）运营，他住在巴斯克地区。这是一个小小的个人网站：有文章，还有一个根据这些文章回答问题的聊天工具。这里不需要创建账号，没有追踪，没有广告，也没有任何东西出售。本站对世界各地的所有访客都遵循欧洲隐私法《通用数据保护条例》（GDPR）。
 
 如果你对本页内容或你的个人数据有任何问题，请写信给乔纳森：<a href="#" data-contact-email data-contact-email-text>给我发邮件</a>。你也可以在 [Instagram](https://www.instagram.com/jonamccallum) 或 [Threads](https://www.threads.com/@jonamccallum) 上给他发消息。
 
