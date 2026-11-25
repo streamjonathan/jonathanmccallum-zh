@@ -42,7 +42,7 @@ eleventyExcludeFromCollections: true
 </section>
 
 <h2>文章</h2>
-<ul class="article-list" data-fade>
+<ul class="article-list" id="article-list" data-show-more-list data-fade>
 {% for post in collections.publishedPosts | reverse %}
   <li>
     <a href="{{ post.url }}">{{ post.data.title }}</a>
@@ -51,6 +51,7 @@ eleventyExcludeFromCollections: true
   </li>
 {% endfor %}
 </ul>
+<button type="button" class="show-more-btn" data-show-more-btn aria-controls="article-list" hidden>显示更多</button>
 
 <hr class="rule-gold">
 <section class="watch-section" data-fade aria-labelledby="watch-heading">

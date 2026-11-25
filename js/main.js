@@ -166,3 +166,35 @@ document.addEventListener("click", function (e) {
   markDot();
   if (!reduceMotion) start();
 })();
+
+(function () {
+  var list = document.querySelector("[data-show-more-list]");
+  var button = document.querySelector("[data-show-more-btn]");
+  if (!list || !button) return;
+  var items = list.children;
+  var STEP = 3;
+  if (items.length <= STEP) return;
+  var shown = STEP;
+  var MORE = "显示更多";
+  var LESS = "显示更少";
+  function render() {
+    for (var i = 0; i < items.length; i++) {
+      items[i].classList.toggle("is-hidden", i >= shown);
+    }
+    var allShown = shown >= items.length;
+    button.textContent = allShown ? LESS : MORE;
+    button.setAttribute("aria-expanded", allShown ? "true" : "false");
+  }
+  button.addEventListener("click", function () {
+    if (shown >= items.length) {
+      shown = STEP;
+      render();
+      list.scrollIntoView();
+    } else {
+      shown = Math.min(shown + STEP, items.length);
+      render();
+    }
+  });
+  button.hidden = false;
+  render();
+})();
