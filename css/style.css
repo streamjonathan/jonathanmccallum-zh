@@ -498,3 +498,12 @@ button[type="submit"] {
     font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 0.9rem; color: var(--muted);
   }
 }
+
+/* Swipe hint: only on touch screens, where swiping works. */
+.post-nav__hint { display: none; }
+@media (pointer: coarse) {
+  .post-nav__hint {
+    display: block; text-align: center; margin: 2rem 0 -1.25rem;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 0.9rem; color: var(--muted);
+  }
+}
